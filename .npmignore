@@ -7,3 +7,4 @@ bla.js
 build.js
 webpack.config.js
 *.log
+wercker.yml
