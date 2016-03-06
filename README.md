@@ -1,6 +1,10 @@
 # Remove Webpack Plugin
 
-Plugin for webpack to remove directorys or files. ($ rm -r)
+[![npm version](https://badge.fury.io/js/remove-webpack-plugin.svg)](https://badge.fury.io/js/remove-webpack-plugin)
+
+[![NPM](https://nodei.co/npm/remove-webpack-plugin.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/remove-webpack-plugin/)
+
+Plugin for webpack to remove directorys or files. (`$ rm -r`)
 
 ### Installation
 
