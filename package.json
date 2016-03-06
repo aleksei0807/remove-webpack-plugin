@@ -22,7 +22,15 @@
     "директория"
   ],
   "author": "Aleksei Schurak",
+  "homepage": "https://github.com/aleksei0807/remove-webpack-plugin",
   "license": "MIT",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/aleksei0807/remove-webpack-plugin.git"
+  },
+  "bugs": {
+	"url": "https://github.com/aleksei0807/remove-webpack-plugin/issues"
+  },
   "devDependencies": {
     "webpack": "^1.12.14"
   },
