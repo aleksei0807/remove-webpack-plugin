@@ -1,0 +1,26 @@
+{
+  "name": "remove-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Plugin for webpack to remove directorys or files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "remove",
+    "directory",
+    "file",
+    "rm",
+    "rf",
+    "recursive",
+    "clean",
+    "удалить",
+    "очистить",
+    "файл",
+    "директория"
+  ],
+  "author": "Aleksei Schurak",
+  "license": "MIT"
+}
