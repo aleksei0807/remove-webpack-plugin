@@ -22,5 +22,11 @@
     "директория"
   ],
   "author": "Aleksei Schurak",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "rimraf": "^2.5.2"
+  }
 }
