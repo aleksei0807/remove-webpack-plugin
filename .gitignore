@@ -2,5 +2,8 @@ node_modules/
 .tern-project
 *.log
 webpack.config.js
-public/
-build/
+public
+build
+build_dir
+bla.js
+build.js

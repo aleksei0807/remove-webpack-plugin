@@ -4,7 +4,7 @@
   "description": "Plugin for webpack to remove directorys or files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make -s clean; make -s test"
   },
   "keywords": [
     "webpack",

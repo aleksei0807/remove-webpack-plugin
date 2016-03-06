@@ -11,10 +11,10 @@ function deletePath(path) {
 
 		fs.accessSync(path, fs.F_OK);
 		rimraf.sync(path);
-		console.log(path + ' is deleted.');
+		console.log('\033[32;01m' + path + ' is deleted.\033[0m');
 
 	} catch (err) {
-		console.error('RemoveWebpackPlugin Error: ' + err);
+		console.error('RemoveWebpackPlugin \033[31;01mError:\033[0m ' + err);
 	}
 }
 
@@ -32,7 +32,7 @@ function RemoveWebpackPlugin(paths) {
 
 	} else {
 
-		console.error('RemoveWebpackPlugin Error: argument not valid!');
+		console.error('RemoveWebpackPlugin \033[31;01mError:\033[0m argument not valid!');
 		return false;
 
 	}
