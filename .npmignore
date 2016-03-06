@@ -1,1 +1,9 @@
 tests/
+Makefile
+public
+build
+build_dir
+bla.js
+build.js
+webpack.config.js
+*.log
