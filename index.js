@@ -7,13 +7,15 @@ var fs = require('fs');
 var rimraf = require('rimraf');
 
 function deletePath(path) {
+	process.stdout.write(path + ': deleted');
 	try {
 
 		fs.accessSync(path, fs.F_OK);
 		rimraf.sync(path);
-		console.log('\033[32;01m' + path + ' is deleted.\033[0m');
+		console.log('\033[32;01m ✔\033[0m');
 
 	} catch (err) {
+		console.log('\033[31;01m ✖\033[0m');
 		console.error('RemoveWebpackPlugin \033[31;01mError:\033[0m ' + err);
 	}
 }
