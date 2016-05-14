@@ -16,7 +16,7 @@ function deletePath(path) {
 
 	} catch (err) {
 		console.log('\033[31;01m ✖\033[0m');
-		console.error('RemoveWebpackPlugin \033[31;01mError:\033[0m ' + err);
+		console.error('RemoveWebpackPlugin \033[31;01m' + err + '\033[0m');
 	}
 }
 
@@ -34,7 +34,7 @@ function RemoveWebpackPlugin(paths) {
 
 	} else {
 
-		console.error('RemoveWebpackPlugin \033[31;01mError:\033[0m argument not valid!');
+		console.error('RemoveWebpackPlugin \033[31;01mError: argument not valid!\033[0m');
 		return false;
 
 	}
