@@ -19,7 +19,12 @@ function deletePath(path, settings) {
 		console.log('\033[31;01m ✖\033[0m');
 		var errors = 'show';
 		if (settings) {
-			errors = validol(settings, 'errors', 'show').result.errors;
+			if (typeof settings === 'object') {
+				errors = validol(settings, 'errors', 'show').result.errors;
+			}
+			if (typeof settings === 'string') {
+				errors = settings;
+			}
 		}
 		if (errors === 'show') {
 			console.error('RemoveWebpackPlugin \033[31;01m' + err + '\033[0m');
