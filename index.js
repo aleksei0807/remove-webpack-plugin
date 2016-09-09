@@ -5,8 +5,9 @@
 
 var fs = require('fs');
 var rimraf = require('rimraf');
+var validol = require('validol');
 
-function deletePath(path) {
+function deletePath(path, settings) {
 	process.stdout.write(path + ': deleted');
 	try {
 
@@ -16,20 +17,29 @@ function deletePath(path) {
 
 	} catch (err) {
 		console.log('\033[31;01m ✖\033[0m');
-		console.error('RemoveWebpackPlugin \033[31;01m' + err + '\033[0m');
+		var errors = 'show';
+		if (settings) {
+			errors = validol(settings, 'errors', 'show').result.errors;
+		}
+		if (errors === 'show') {
+			console.error('RemoveWebpackPlugin \033[31;01m' + err + '\033[0m');
+		}
+		if (errors === 'fatal') {
+			throw new Error('RemoveWebpackPlugin: ' + err);
+		}
 	}
 }
 
-function RemoveWebpackPlugin(paths) {
+function RemoveWebpackPlugin(paths, settings) {
 	if (typeof paths == 'string') {
 
-		deletePath(paths);
+		deletePath(paths, settings);
 
 	} else if (paths instanceof Array) {
 
 		var len = paths.length;
 		for (var i = 0; i < len; i++) {
-			deletePath(paths[i]);
+			deletePath(paths[i], settings);
 		}
 
 	} else {
