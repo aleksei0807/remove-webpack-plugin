@@ -4,7 +4,7 @@
   "description": "Plugin for webpack to remove directorys or files.",
   "main": "index.js",
   "scripts": {
-    "test": "make -s clean; make -s test"
+    "test": "mocha tests"
   },
   "keywords": [
     "webpack",
@@ -32,6 +32,9 @@
     "url": "https://github.com/aleksei0807/remove-webpack-plugin/issues"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "node-cmd": "^1.2.0",
     "webpack": "^1.12.14"
   },
   "dependencies": {
